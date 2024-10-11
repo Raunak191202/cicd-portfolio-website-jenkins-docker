@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Raunak191202/cicd-portfolio-website-jenkins-docker.git'
+                git branch: 'main', url: 'https://github.com/Raunak191202/cicd-portfolio-website-jenkins-docker.git'
             }
         }
         stage('Build') {
